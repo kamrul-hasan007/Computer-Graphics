@@ -10419,7 +10419,6 @@ void handleKeypressM(unsigned char key, int x, int y)
     break;
     case '2':
     glutDisplayFunc(display2);
-    sndPlaySound("Sound-2.wav", SND_ASYNC);
     glutPostRedisplay();
     break;
     case '3':
@@ -10449,7 +10448,7 @@ int main(int argc, char** argv) {
     glutTimerFunc(100, updateI, 0);
 	glutDisplayFunc(display1);
 	glutFullScreen();
-
+    sndPlaySound(("audio", SND_ASYNC);
     glutTimerFunc(100, update1, 0);
     glutTimerFunc(100, update2, 0);
     glutTimerFunc(100, update3, 0);
@@ -10474,3 +10473,4 @@ int main(int argc, char** argv) {
 	glutMainLoop();
 	return 0;
 }
+
